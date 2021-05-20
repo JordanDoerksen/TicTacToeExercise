@@ -1,3 +1,4 @@
+##TESTED AND WORKING
 rows = 3#int(input("How many rows would you like? "))
 cols = 3#int(input("How many cols would you like? "))
 board = [[0 for i in range(cols)] for j in range(rows)]
@@ -55,6 +56,9 @@ def getWinner(board):
 for row in board:
 	print(row)
 
+	
+#########WORKING ON RECURSIVLY PLAYING ALL GAMES TO FIND BEST NEXT MOVE
+	
 #returns tie,xWins,oWins
 def playAllGames(currentBoard, player, tie = 0, xWins = 0, oWins = 0):
 	otherPlayer = x if player == o else o
