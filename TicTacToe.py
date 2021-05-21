@@ -52,15 +52,6 @@ def getWinner(board):
             return tempDiag[0]
     return 0
 
-
-# print board
-for row in board:
-    print(row)
-
-
-#########WORKING ON RECURSIVLY PLAYING ALL GAMES TO FIND BEST NEXT MOVE
-
-
 def playAllGames(currentBoard, player, tie=0, xWins=0, oWins=0):
     tempWinner = getWinner(currentBoard)
     otherPlayer = x if player == o else o
@@ -80,32 +71,13 @@ def playAllGames(currentBoard, player, tie=0, xWins=0, oWins=0):
     return tie,xWins,oWins
 
 
+# print board
 
 
-print(playAllGames(board,x))
-for row in board:
-    print(row)
-# board2 = copy.deepcopy(board)
-# board2[0][0] = 2
-# for row in board:
-#     print(row)
-# for row in board2:
-#     print(row)
-# returns tie,xWins,oWins
-# def playAllGames(currentBoard, player, tie=0, xWins=0, oWins=0):
-#     otherPlayer = x if player == o else o
-#     for row in range(rows):
-#         for col in range(cols):
-#             if currentBoard[row][col] == 0:
-#                 currentBoard[row][col] = player
-#                 tempWinner = getWinner(currentBoard)
-#                 if tempWinner == 0:
-#                     print("test")
-#                     tie, xWins, oWins = playAllGames(currentBoard, otherPlayer, tie, xWins, oWins)
-#                 elif tempWinner == 1:
-#                     tie, xWins + 1, oWins
-#                 elif tempWinner == 2:
-#                     tie, xWins, oWins + 1
-#                 elif tempWinner == 4:
-#                     tie + 1, xWins, oWins
-#     return tie, xWins, oWins
+
+#########WORKING ON
+
+
+
+
+
