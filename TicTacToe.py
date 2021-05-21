@@ -132,7 +132,7 @@ def play_pvc_game(board):
     cls()
     print(f"You have chosen to play as {gamePiece[player]} you go {'first' if player == 1 else 'last'}")
     turn = 0
-    while turn < 9: #getWinner(board) == 0:
+    while getWinner(board) == 0:
         if (turn % 2 == 0 and player == 1) or (turn % 2 == 1 and player == 2):
             board = player_goes(board, player)
             turn += 1
